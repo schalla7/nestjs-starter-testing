@@ -5,8 +5,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { ProductModule } from './product/product.module';
 
-import { Logger } from '@nestjs/common';
-
 @Module({
   imports: [
     TypeOrmModule.forRoot({
