@@ -13,16 +13,6 @@ export class ProductRepository extends Repository<Product> {
     product.name = name;
     product.description = description;
     product.price = price;
-      
-    //   try
-    //   {
-    //       createProductDto.price = +createProductDto.price;
-    //   }
-    //   catch (error)
-    //   {
-    //       return { error: `Invalid input: price should be a number, instead received: ${}` }
-    //       Logger.warn("Returned error to caller.")
-    //   }
 
     await product.save();
     return product;
